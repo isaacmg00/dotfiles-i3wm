@@ -4,7 +4,7 @@ These are some of the applications that I use in my current setup.
 
 - **Distro**: Manjaro Linux 5.14.21-2
 - **Window Manager**: [i3-gaps](https://github.com/Airblader/i3)  
-- **Shell**:[zsh](https://ohmyz.sh/)  
+- **Shell**: [zsh](https://ohmyz.sh/)  
 - **Terminal**: [Allacritty](https://github.com/alacritty/alacritty)  
 - **Apps Launcher**: [rofi](https://github.com/davatorium/rofi)  
 - **Widgets**: [Eww](https://github.com/elkowar/eww)  
