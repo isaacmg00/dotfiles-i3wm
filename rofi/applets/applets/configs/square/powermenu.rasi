@@ -1,0 +1,113 @@
+/*
+ *
+ * Author  : Aditya Shakya
+ * Mail    : adi1090x@gmail.com
+ * Github  : @adi1090x
+ * Twitter : @adi1090x
+ *
+ */
+
+configuration {
+    show-icons:                     false;
+	font:                      		"SFNS Dislplay 12";
+    disable-history:                false;
+	sidebar-mode: 					false;
+}
+
+@import "~/.cache/wal/colors-rofi-light.rasi"
+
+* {
+    background-color:               #ffffff00;
+    text-color:                     #ffffff00;
+}
+
+window {
+    background-color:               #ffffff0f;
+    fullscreen: true;
+    transparency:                   "real";
+    border-radius:                  10px;
+    //location:                       southeast;
+	//width:							40px;
+    //x-offset:                       100px;
+    //y-offset:                       -45px;
+    
+}
+
+prompt {
+    enabled: 						false;
+    padding:                        0px;
+	background-color: 				#ffffff00;
+	text-color: 					#ffffff00;
+    //border:                  		2px 2px 2px 2px;
+    border-radius:                  0px;
+    border-color:                  	#ffffff00;
+}
+
+
+listview {
+    x-offset: 00px;
+    columns:						5;
+    lines:							5;
+    spacing:                        12px;
+    cycle:                          true;
+    dynamic:                        true;
+    layout:                         horizontal;
+}
+
+mainbox {
+    position: center;
+    background-color:               #ffffff00;
+    children:                       [ listview ];
+    spacing:                        12px;
+    margin:                         12px;
+    width: 10px;
+}
+
+element {
+    background-color:               @background-light;
+    text-color:                     @foreground;
+    orientation:                    center;
+    border-radius:                  10px;
+    width: 15%;
+}
+
+element-text {
+    background-color: 				inherit;
+    text-color:       				#ffffff;
+	font:							"feather 20";
+    expand:                         true;
+    horizontal-align:               0.5;
+    vertical-align:                 0.5;
+    margin:                         19px 10px 19px 10px;
+}
+
+element normal.urgent,
+element alternate.urgent {
+    background-color:               @off;
+    text-color:                     #ffffff00;
+    border-radius:                  0px;
+}
+
+element normal.active,
+element alternate.active {
+    background-color:               #ffffff00;
+    text-color:                     #ffffff00;
+}
+
+element selected {
+    background-color:               #ffffff00;
+    text-color:                     #ffffff00;
+    border:                  		0px;
+    border-radius:                  10px;
+    border-color:                  	#ffffff00;
+}
+
+element selected.urgent {
+    background-color:               #ffffff00;
+    text-color:                     #ffffff00;
+}
+
+element selected.active {
+    background-color:               #ffffff00;
+    color:                          #ffffff00;
+}

@@ -1,0 +1,124 @@
+/*
+ *
+ * Author  : Aditya Shakya
+ * Mail    : adi1090x@gmail.com
+ * Github  : @adi1090x
+ * Twitter : @adi1090x
+ *
+ */
+
+configuration {
+	font:							"Cheltenham-Condensed Bold Italic 12";
+    show-icons:                     false;
+	icon-theme: 					"Papirus";
+    drun-display-format:            "{name}";
+    disable-history:                false;
+	sidebar-mode: 					false;
+}
+
+@import "~/colors-rofi-light.rasi"
+
+window {
+    transparency:                   "real";
+    background-image:               url("~/Pictures/space_cowboy.webp");
+    background-color:               #ffffff00;
+
+    text-color:                     @foreground;
+    border-radius:                  0px;
+	width:							100%;
+	height:							100%;
+}
+
+prompt {
+    enabled: 						true;
+    padding:                        1% 1% 1% 1%;
+	background-color: 				#ffffff0f;
+	text-color: 					@foreground;
+}
+
+textbox-prompt-colon {
+	expand: 						false;
+	str: 							"SEE YOU SPACE COWBOY...";
+	background-color: 				@background-alt;
+	text-color: 					@foreground;
+    padding:                        1% 0.5% 1% 0.5%;
+}
+
+inputbar {
+	children: 						[ textbox-prompt-colon, prompt ];
+    background-image:               url("img/space_cowboy.webp");
+    text-color:                     @foreground;
+    expand:                         false;
+    border:                  		0% 0% 0.2% 0.2%;
+    border-radius:                  15px;
+    border-color:                  	@border;
+    margin:                         0% 59.3% 0% 0%;
+    padding:                        0.5%;
+    position:                       center;
+}
+
+listview {
+    background-color:               #ffffff00;
+    margin:                         0% 0% 0% 0%;
+    spacing:                        3%;
+    cycle:                          true;
+    dynamic:                        true;
+    layout:                         horizontal;
+}
+
+mainbox {
+    background-image:               url("img/space_cowboy.webp");
+    children:                       [ inputbar, listview ];
+    spacing:                        5%;
+    padding:                        35.50% 0% 0% 11.25%;
+}
+
+element {
+    background-color:               #c4bfc9;
+        background-image:               url("img/space_cowboy.webp");
+
+    text-color:                     #ffffff00;
+    orientation:                    horizontal;
+    border-radius:                  25px;
+}
+
+element-text {
+    background-color: 				#00000000;
+    text-color:       				inherit;
+	font:							"feather 64";
+    expand:                         true;
+    horizontal-align:               0.5;
+    vertical-align:                 0.5;
+    margin:                         6.5% 4% 6.5% 4%;
+}
+
+element normal.urgent,
+element alternate.urgent {
+    background-color:               #c4bfc9;
+    text-color:                     #c4bfc9;
+    border-radius:                  0.2%;
+}
+
+element normal.active,
+element alternate.active {
+    background-color:               #ffffff00;
+    text-color:                     #ffffff00;
+}
+
+element selected {
+    background-color:               #c4bfc9;
+    text-color:                     #ffffff;
+    border:                  		0% 0% 0.2% 0.2%;
+    border-radius:                  25px;
+    border-color:                  	@border;
+}
+
+element selected.urgent {
+    background-color:               #ffffff00;
+    text-color:                     @foreground;
+}
+
+element selected.active {
+    background-color:               #ffffff00;
+    color:                          @foreground;
+}

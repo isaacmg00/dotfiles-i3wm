@@ -1,0 +1,625 @@
+[colors]
+; define colors 
+background = #fa1e2137 
+;background = #00000000
+background-alt = #00000000
+foreground = #ffffff
+foreground-alt = #ffffff
+primary = #331E1E1E
+secondary = #ffffff
+alert = #711a26
+bg = #cc000000
+
+[bar/first]
+font-0 = Material Icons:style=Regular:size=11;8
+font-1 = FontAwesome:style=Regular:size=12;8
+font-14 = Material Icons:style=Regular:size=20;14
+
+
+inherit = bar/mod
+bottom = true
+offset-x = 40%
+offset-y = -1
+width = 20%
+background = #00000000
+modules-center =  i3
+
+fixed-center = true
+
+
+[bar/second]
+enable-ipc = true
+cursor-click = pointer
+font-0 = FontAwesome:style=Regular:size=15;6.5
+font-1 = Overpass:style=Regular:size=12.5;6
+font-2 = Material Icons:style=Regular:size=14;8
+font-3 = Hack:pixelsize=12:antialias=true;6
+font-4 = FontAwesome:style=Regular:size=8;8
+width = 40%
+
+padding-left = 1
+bottom = true
+inherit = bar/mod
+offset-x = 0%
+padding-right = 1000
+background = #00000000
+module-margin-right = 1
+offset-y = 0
+fixed-center = true
+
+modules-left = spotify spotify-prev spotify-play-pause spotify-next cava
+
+
+[bar/volume]
+font-0 = Material Icons:style=Regular:size=12;6
+font-1 = FontAwesome:style=Regular:size=10;4
+
+inherit = bar/mod
+bottom = false
+offset-x = 70%
+offset-y = -10
+width = 20%
+background = #00000000
+modules-right =  alsa
+
+fixed-center = true
+
+
+[bar/date]
+font-0 = Overpass:style=Regular:size=12.5;6
+font-1 = MaterialIcons:style=Regular:size=10;8
+
+inherit = bar/mod
+bottom = true
+offset-x = 80%
+offset-y = 0
+width = 20%
+background = #00000000
+modules-right =  date
+fixed-center = true
+
+;cava
+
+[bar/mod]
+
+override-redirect = true
+wm-restack = i3
+
+bottom = false
+fixed-center = true
+height = 38
+;offset-x = 25
+offset-y = -10
+radius = 15px
+border-size = 0px
+border-color = #000
+
+padding-left = 0
+padding-right = 0
+
+module-margin-left = 1
+module-margin-right = 1
+
+;background = ${colors.background}
+;foreground = ${colors.foreground}
+
+font-0 = Hack:pixelsize=12:antialias=true;6
+font-1 = MaterialIcons:style=Regular:pixelsize=14:antialias=true;8
+font-2 = Hack Nerd Font:style=Regular:pixelsize=14:antialias=true;3
+font-3 = Font Awesome:style=Solid:size=14;8
+font-4 = FontAwesome5Free:style=Regular:size=10;4
+font-5 = FontAwesome5Brands:style=Regular:size=10;4
+font-6= Siji:style=Regular:size=12;4
+font-7 = MaterialIcons:style=Regular:pixelsize=24:antialias=true;18
+
+
+cursor-click = pointer
+cursor-scroll = ns-resize
+
+[bar/topbar]
+override-redirect = true
+
+; topbar positioning 
+width = 10%
+offset-x = 10
+offset-y = 2
+height = 25
+radius = 0.0
+fixed-center = true
+border-size = 0
+padding-left = 0
+padding-right = 2
+module-margin-left = 1
+module-margin-right = 1
+tray-position = none
+tray-padding = 2
+wm-restack = i3
+
+; bar color
+border-color = #0D00564d
+background = #00ffffff
+;foreground = ${colors.foreground}
+
+; used fonts
+font-0 = SFNS Display:style=Regular:antialias=true:size=12;3
+font-1 = FontAwesome:style=FontAwesome5Brands:size=12;3
+font-2 = FontAwesome:style=Regular:size=12;0
+font-3 = Siji:pixelsize=12:3
+font-4 = FontAwesome:style=Regular:size=12;3
+font-5 = Material Icons:style=Regular:size=13;4
+font-6 = Hack:style=Regular:size=12;3
+font-7 = Nimbus Sans:style=Regular:size=12;3
+font-8 = WeatherIcons:size=17
+font-9 = FontAwesome:style=Regular:size=14;8
+font-10 = Source Sans Pro:pixelsize=12:antialias=true;7
+font-11 = Material Icons:style=Regular:size=14;9
+font-12 = Hack:pixelsize=12:antialias=true;6
+font-13= FontAwesome:style=Regular:size=8;8
+font-14 = MaterialIcons:style=Regular:size=23;9
+
+
+; module positions =
+modules-center =
+modules-left = battery discord bluetooth power
+
+; scrolling action on the topbar
+scroll-up = bspwm-desknext
+scroll-down = bspwm-deskprev
+
+; cursor shape when hovering and scrolling over bar icons
+cursor-click = pointer
+eursor-scroll = ns-resize
+
+[bar/bottombar]
+override-redirect = true
+
+; bottombar positioning 
+bottom = true
+width = 20%
+height = 25
+radius = 0.0
+border-size = 0
+padding-left = 2
+padding-right = 2
+module-margin-left = 1
+module-margin-right = 1
+fixed-center = true
+tray-position = none
+tray-padding = 2
+
+; bar color
+background = #ffffff
+;foreground = ${colors.foreground}
+border-color = #0D00564d
+
+
+; used fonts
+font-0 = Nimbus Sans:style=Regular:size=8;-3
+font-6 = Hack:style=Regular:size=12;3
+font-5 = MaterialIcons:style=Regular:size=12;3
+font-1 = FontAwesome:style=Regular:size=12;2
+font-2 = FontAwesome:style=Regular:size=12;3
+font-3 = Siji:pixelsize=12:3
+font-4 = FontAwesome:style=Regular:size=12;3
+font-7 = Hack:style=Regular:size=12;3
+
+; module positions
+modules-center = i3
+modules-left =
+
+; cursor shape when hovering and scrolling over bar icons
+cursor-click = pointer
+eursor-scroll = ns-resize
+
+
+[module/pulseaudio]
+type = internal/pulseaudio
+
+; Sink to be used, if it exists (find using `pacmd list-sinks`, name field)
+; If not, uses default sink
+sink = alsa_output.pci-0000_12_00.3.analog-stereo
+
+; Use PA_VOLUME_UI_MAX (~153%) if true, or PA_VOLUME_NORM (100%) if false
+; Default: true
+use-ui-max = false
+
+; Interval for volume increase/decrease (in percent points)
+; Default: 5
+interval = 5
+; Available tags:
+;   <label-volume> (default)
+;   <ramp-volume>
+;   <bar-volume>
+format-volume =  <bar-volume> 
+format-volume-margin = 2.5
+
+
+; set alsa bar properties
+bar-volume-width = 10
+bar-volume-foreground-0 = #ffffff
+bar-volume-gradient = true
+bar-volume-indicator = 
+
+bar-volume-indicator-font = 2
+bar-volume-fill = ─
+bar-volume-fill-font = 5
+bar-volume-empty = ─
+bar-volume-empty-font = 5
+label-muted = Muted
+label-muted-foreground = #5c
+; Available tags:
+;   <label-muted> (default)
+;   <ramp-volume>
+;   <bar-volume>
+;format-muted = <label-muted>
+
+; Available tokens:
+;   %percentage% (default)
+;   %decibels%
+;label-volume = %percentage%%
+
+; Available tokens:
+;   %percentage% (default)
+;   %decibels%
+
+
+; Right and Middle click
+click-right = pavucontrol
+; click-middle = 
+
+[module/discord]
+type = custom/script
+exec = echo "%{O2}"
+cursor-click = pointer
+click-left = systemsettings5
+
+
+[module/power]
+type = custom/script
+format = <label>
+label-font = 14
+label = %{T14}%{T-}
+exec = echo " "
+
+[module/weather]
+type = custom/script
+exec = busctl --user -j get-property io.ntfd /weather openweathermap.strings RenderedTemplate | jq -r .data
+interval = 60
+label-font = 3
+
+[module/spotify]
+type = custom/script
+tail = true
+; prefix symbol is shown before the text
+format-prefix = "   "
+format-prefix-foreground = #1DB954
+format =   <label>
+exec = ~/scripts/scroll_spotify_status.sh
+format-foreground = ${xrdb:color15}
+
+label-maxlen = 40
+
+[module/spotify-prev]
+type = custom/script
+exec = echo ""
+format = <label>
+format-foreground = ${xrdb:color15}
+click-left = playerctl previous -p spotify
+
+[module/spotify-play-pause]
+type = custom/ipc
+hook-0 = echo ""
+hook-foreground = ${xrdb:color15}
+hook-1 = echo ""
+;hook-foreground = ${xrdb:color15}
+initial = 1
+
+click-left = playerctl play-pause -p spotify
+
+[module/spotify-next]
+type = custom/script
+exec = echo " "
+format = <label>
+format-foreground = ${xrdb:color15}
+
+click-left = playerctl next -p spotify
+
+
+[module/brightnessctl]
+type = custom/script
+exec = ~/.config/polybar/brightnessctl.sh
+
+scroll-up = exec brightnessctl set +5%
+;brightnessctl set +5% & ddcutil setvcp 10 + 25
+scroll-down = exec brightnessctl set 5%-
+interval = 0.5
+
+label = %{O0}%output%
+label-foreground = ${colors.foreground}
+
+[module/pulseaudio-control]
+type = custom/script
+tail = true
+format-underline = ${colors.foreground}
+label-padding = 0
+label-foreground = ${colors.foreground}
+
+format-volume =  <bar-volume> 
+format-volume-margin = 2.5
+
+
+; set alsa bar properties
+bar-volume-width = 10
+bar-volume-foreground-0 = #ffffff
+bar-volume-gradient = true
+bar-volume-indicator = 
+
+bar-volume-indicator-font = 2
+bar-volume-fill = ─
+bar-volume-fill-font = 5
+bar-volume-empty = ─
+bar-volume-empty-font = 5
+label-muted = Muted
+label-muted-foreground = #5c2735
+
+
+# Icons mixed from Font Awesome 5 and Material Icons
+# You can copy-paste your options for each possible action, which is more
+# trouble-free but repetitive, or apply only the relevant ones (for example
+# --sink-blacklist is only needed for next-sink).
+exec = pulseaudio-control --icons-volume " , " --icon-muted " " --sink-nicknames-from "device.description" --sink-nickname "alsa_output.pci-0000_00_1b.0.analog-stereo:  Speakers" --sink-nickname "alsa_output.usb-Kingston_HyperX_Virtual_Surround_Sound_00000000-00.analog-stereo:  Headphones" listen --volume-step 1
+click-right = exec pavucontrol &
+click-left = pulseaudio-control togmute
+click-middle = pulseaudio-control --sink-blacklist "alsa_output.pci-0000_01_00.1.hdmi-stereo-extra2" next-sink
+scroll-up = pulseaudio-control --volume-max 100 up
+scroll-down = pulseaudio-control --volume-max 100 down
+
+[module/bluetooth]
+offset-x = 3
+type = custom/script
+exec = ~/.config/polybar/bluetooth.sh
+interval = 10
+click-left = exec blueberry
+click-right = exec ~/.config/polybar/toggle_bluetooth.sh
+
+
+[module/cava]
+type = custom/script
+tail = true
+exec = $HOME/.config/polybar/cava.sh
+format = <label>
+format-font = 1
+offset-y = 10
+label-foreground = ${xrdb:color15}
+label = %output%
+
+[module/xwindow]
+type = internal/xwindow
+format = <label>
+format-padding = 4
+label = %title%
+label-maxlen = 30
+
+[module/xkeyboard]
+type = internal/xkeyboard
+blacklist-0 = caps lock
+blacklist-1 = num lock
+
+[module/i3]
+type = internal/i3
+format = <label-state> <label-mode>
+format-margin = 4
+index-sort = true
+
+enable-click = true
+reverse-scroll = false
+
+label-focused = %{T5}%{T-}
+label-focused-foreground = ${xrdb:color15}
+label-focused-padding = 1
+
+label-unfocused = 
+
+label-unfocused-foreground = ${xrdb:color15}
+
+label-unfocused-padding = 1
+
+label-urgent = 
+label-urgent-padding = 5
+
+;ws-icon-0 = 1;
+;ws-icon-1 = 2;
+;ws-icon-2 = 3;
+;ws-icon-9 = 10;
+;ws-icon-default = 
+
+;ws-icon-0 = 1;
+;ws-icon-1 = 2;
+;ws-icon-2 = 3;
+;ws-icon-9 = 10;
+;ws-icon-default = 
+
+[module/bspwm]
+type = internal/bspwm
+label-focused-foreground = ffffff
+label-focused = 
+label-focused-background = ${colors.background-alt}
+label-focused-underline= ${colors.primary}
+label-focused-padding = 2
+
+; set label properties
+label-occupied = %icon%
+label-occupied-padding = 2
+label-occupied-foreground = ffffff
+label-urgent = %icon%!
+label-urgent-background = ${colors.alert}
+label-urgent-padding = 2
+label-empty = 
+label-empty-foreground = ffffff
+label-empty-padding = 2
+
+; set icons for workspace states
+ws-icon-0 = I;
+ws-icon-1 = II;
+ws-icon-2 = III;
+ws-icon-3 = IV;
+ws-icon-4 = V;
+ws-icon-5 = VI;
+ws-icon-6 = VII;
+ws-icon-7 = VIII;
+ws-icon-8 = IX;
+ws-icon-9 = X;
+
+[module/date]
+type = internal/date
+interval = 1
+
+date = "%a, %m/%d"
+date-alt = "%m-%d-%Y"
+
+time = %I:%M %p
+time-alt = %I:%M:%S %p
+
+#format-prefix = 
+format-prefix-foreground = ${colors.foreground-alt}
+;format-underline = #0a6cf5
+label-font = font-0
+
+label = %date%  %time:3%
+;label = %time:3%
+
+label-foreground = ${xrdb:color15}
+label-padding = 2
+;    type = internal/date
+ ;   interval = 1
+  ;  date = %Y-%m-%d%
+   ; time = %H:%M
+    ;label = %date% | %time%
+
+[module/alsa]
+type = internal/alsa
+format-volume =  <bar-volume> 
+format-volume-margin = 2.5
+
+
+; set alsa bar properties
+bar-volume-width = 10
+bar-volume-foreground-0 = #ffffff
+bar-volume-gradient = true
+bar-volume-indicator = 
+
+bar-volume-indicator-font = 2
+bar-volume-fill = ─
+bar-volume-fill-font = 5
+bar-volume-empty = ─
+bar-volume-empty-font = 5
+label-muted = Muted
+label-muted-foreground = #ffffff
+
+[module/battery]
+type = internal/battery
+battery = BAT1
+adapter = ADP1
+full-at = 95
+format-charging = <ramp-capacity>
+format-discharging = %{O-3}<ramp-capacity>
+format-full = 
+label-charging-foreground = #097319
+animation-charging-0 = 
+animation-charging-1 = 
+animation-charging-2 = 
+animation-charging-3 = 
+animation-charging-4 = 
+; Framerate in milliseconds
+animation-charging-framerate = 1000
+
+ramp-capacity-0 = 
+ramp-capacity-1 = 
+ramp-capacity-2 = 
+ramp-capacity-3 = 
+ramp-capacity-4 = 
+
+[module/network]
+type = internal/network
+; Name of the network interface to display. You can get the names of the
+; interfaces on your machine with `ip link`
+; Wireless interfaces often start with `wl` and ethernet interface with `eno` or `eth`
+interface = wlp4s0
+
+; Seconds to sleep between updates
+; Default: 1
+interval = 3.0
+format-connected = <label-connected>
+format-connected-padding-right = 1
+format-disconnected = <label-disconnected>
+; Test connectivity every Nth update
+; A value of 0 disables the feature
+; NOTE: Experimental (needs more testing)
+; Default: 0
+;ping-interval = 3
+label-connected = %{O-0}
+label-disconnected = %{O-0}
+
+
+; @deprecated: Define min width using token specifiers (%downspeed:min% and %upspeed:min%)
+; Minimum output width of upload/download rate
+; Default: 3
+udspeed-minwidth = 5
+
+; Accumulate values from all interfaces
+; when querying for up/downspeed rate
+; Default: false
+accumulate-stats = true
+
+; Consider an `UNKNOWN` interface state as up.
+; Some devices like USB network adapters have 
+; an unknown state, even when they're running
+; Default: false
+unknown-as-up = true
+
+[settings]
+screenchange-reload = true
+
+[global/wm]
+margin-top = 5
+margin-bottom = 5
+
+[module/mpd]
+type = internal/mpd
+format-online = <icon-prev> <icon-stop> <toggle> <icon-next>    <icon-repeat> <icon-random>  <bar-progress> <label-time>  <label-song>
+
+; icon and label colors
+; introduce cc for reduced opacity (aarrggbb)
+icon-play-foreground = ccffffff
+icon-pause-foreground = ccffffff
+icon-stop-foreground = ccffffff
+icon-prev-foreground = ccffffff
+icon-next-foreground = ccffffff
+label-song-foreground = ccffffff
+label-time-foreground = ccffffff
+
+; mpd icons
+icon-repeat = 
+icon-play = 
+icon-pause = 
+icon-stop = 
+icon-prev = 
+icon-next = 
+icon-random = 
+
+; toggle colors
+toggle-on-foreground = B3ffffff
+toggle-off-foreground = 4dffffff
+
+; mpd bar properties
+bar-progress-width = 22
+bar-progress-format = %{A4:mpdseek+2: A5:mpdseek-2:}%fill%%indicator%%empty%%{A A}
+bar-progress-indicator = 
+bar-progress-indicator-foreground = ffffff
+bar-progress-indicator-font = 2
+bar-progress-fill = ─
+bar-progress-fill-foreground = ccffffff
+bar-progress-fill-font = 2
+bar-progress-empty = ─
+bar-progress-empty-font = 2
+bar-progress-empty-foreground = 4dffffff
