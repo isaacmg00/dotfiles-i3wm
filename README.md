@@ -1,3 +1,5 @@
+(Note: These are a WIP, so keep in mind they are messy)
+
 ### :computer: **System Information :**
 
 These are some of the applications that I use in my current setup. 
