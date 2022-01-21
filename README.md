@@ -1,6 +1,6 @@
 (Note: WIP, so keep in mind these dots are messy)
 
-### :computer: **System Information :**
+### :computer: **System Information **:
 
 These are some of the applications that I use in my current setup. 
 
@@ -16,7 +16,7 @@ These are some of the applications that I use in my current setup.
 - **File Manager**: [Thunar](https://wiki.archlinux.org/title/thunar)
 - **Notification-daemon**: [Dunst](https://wiki.archlinux.org/index.php/Dunst)  
 
-### :art: **Application themes and extensions**  
+### :art: **Application themes and extensions **:
 
 These provide for system-wide theme consistency based off the current wallpaper. See [pywal](https://github.com/dylanaraps/pywal).
 
