@@ -25,7 +25,7 @@ These provide for system-wide theme consistency based off the current wallpaper.
 - **Discord**: [BetterDiscord](https://betterdiscord.app/) to allow custom CSS themes, [pywal-discord](https://github.com/FilipLitwora/pywal-discord) to apply current wal color scheme.
 - **GTK**: [oomox](https://github.com/themix-project/oomox) & [lxappearance](https://archlinux.org/packages/community/x86_64/lxappearance/)
 
-### :memo: Fonts:  
+### :pencil2: Fonts:  
 - **Terminal**: Hack  
 - **Polybar (bottom) & Eww (top) panels**: [Overpass](https://github.com/RedHatOfficial/Overpass), [FontAwesome](https://fontawesome.com/) and [Material Icons](https://google.github.io/material-design-icons/) for the glyphs/icons.
 
