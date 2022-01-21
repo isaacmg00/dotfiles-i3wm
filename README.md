@@ -7,7 +7,7 @@ These are some of the applications that I use in my current setup.
 - **Distro**: Manjaro Linux 5.14.21-2
 - **Window Manager**: [i3-gaps](https://github.com/Airblader/i3)  
 - **Shell**: [zsh](https://ohmyz.sh/)
-- **Compositor**: [picom](https://github.com/ibhagwan/picom) (ibhagwan's fork)
+- **Compositor**: [picom](https://github.com/ibhagwan/picom) (ibhagwan fork)
 - **Terminal**: [Allacritty](https://github.com/alacritty/alacritty)  
 - **App Launcher/Powermenu**: [rofi](https://github.com/davatorium/rofi)   
 - **Panel**: [Polybar](https://github.com/polybar/polybar) & [Eww](https://github.com/elkowar/eww)
