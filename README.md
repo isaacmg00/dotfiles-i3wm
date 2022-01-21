@@ -9,7 +9,13 @@ These are some of the applications that I use in my current setup.
 - **Apps Launcher**: [rofi](https://github.com/davatorium/rofi)  
 - **Widgets**: [Eww](https://github.com/elkowar/eww)  
 - **Panel**: [Polybar](https://github.com/polybar/polybar)  
-- **Text Editor**: VS Code  
+- **Text Editor**: [VS Code](https://github.com/microsoft/vscode)
 - **PDF Viewer**: [Zathura](https://pwmt.org/projects/zathura/) 
-- **File Manager**: Thunar  
+- **File Manager**: [Thunar](https://wiki.archlinux.org/title/thunar)
 - **Notification-daemon**: [Dunst](https://wiki.archlinux.org/index.php/Dunst)  
+
+### :art: **Application themes and extensions**  
+- **Firefox**: [pywalfox](https://github.com/frewacom/pywalfox)  
+- **Spotify**: [spicetify](https://spicetify.app/)  
+- **Discord**: [BetterDiscord](https://betterdiscord.app/) to allow custom CSS themes, [pywal-discord](https://github.com/FilipLitwora/pywal-discord) to apply current color scheme to BetterDiscord.
+
