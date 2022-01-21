@@ -27,7 +27,7 @@ These provide for system-wide theme consistency based off the current wallpaper.
 
 ### :memo: Fonts:  
 - **Terminal**: Hack  
-- **Polybar (bottom) & Eww( top) panels**: [Overpass](https://github.com/RedHatOfficial/Overpass), [FontAwesome](https://fontawesome.com/) and [Material Icons](https://google.github.io/material-design-icons/) for the glyphs/icons.
+- **Polybar (bottom) & Eww (top) panels**: [Overpass](https://github.com/RedHatOfficial/Overpass), [FontAwesome](https://fontawesome.com/) and [Material Icons](https://google.github.io/material-design-icons/) for the glyphs/icons.
 
 
 
