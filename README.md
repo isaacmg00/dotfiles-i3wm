@@ -2,16 +2,14 @@
 
 These are some of the applications that I use in my current setup. 
 
-- **Distribution**: Arch Linux  
-- **Window Manager**: [Openbox](https://openbox.org/)  
-- **Shell**:Bash  
-- **Terminal**: [Kitty](https://sw.kovidgoyal.net/kitty/)  
-- **Display Manager**: [Slim](https://github.com/gsingh93/slim-display-manager)  
+- **Distro**: Manjaro Linux 5.14.21-2
+- **Window Manager**: [i3-gaps](https://github.com/Airblader/i3)  
+- **Shell**:[zsh](https://ohmyz.sh/)  
+- **Terminal**: [Allacritty](https://github.com/alacritty/alacritty)  
 - **Apps Launcher**: [rofi](https://github.com/davatorium/rofi)  
 - **Widgets**: [Eww](https://github.com/elkowar/eww)  
-- **Panel**: [Tint2](https://github.com/semplice/tint2)  
-- **Text Editor**: Geany & Vim  
+- **Panel**: [Polybar](https://github.com/polybar/polybar)  
+- **Text Editor**: VS Code  
+- **PDF Viewer**: [Zathura](https://pwmt.org/projects/zathura/) 
 - **File Manager**: Thunar  
 - **Notification-daemon**: [Dunst](https://wiki.archlinux.org/index.php/Dunst)  
-- **Music Player (CLI)**: ncmpcpp  
-- **Display Manager**: Slim (slim provide slimlock for lockscreen too.)
