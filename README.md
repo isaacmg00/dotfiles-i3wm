@@ -15,10 +15,12 @@ These are some of the applications that I use in my current setup.
 - **Notification-daemon**: [Dunst](https://wiki.archlinux.org/index.php/Dunst)  
 
 ### :art: **Application themes and extensions**  
+
+These provide for system-wide theme consistency based off the current wallpaper. See [pywal](https://github.com/dylanaraps/pywal).
+
 - **Firefox**: [pywalfox](https://github.com/frewacom/pywalfox)  
 - **Spotify**: [spicetify](https://spicetify.app/)  
 - **Discord**: [BetterDiscord](https://betterdiscord.app/) to allow custom CSS themes, [pywal-discord](https://github.com/FilipLitwora/pywal-discord) to apply current wal color scheme.
-- **Terminal**: [pywal](https://github.com/dylanaraps/pywal)
 - **GTK**: [oomox](https://github.com/themix-project/oomox) & [lxappearance](https://archlinux.org/packages/community/x86_64/lxappearance/)
 
 
