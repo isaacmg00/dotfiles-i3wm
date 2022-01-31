@@ -148,7 +148,6 @@
     (network)
     (bluetooth)
     (battery)
-    (sidebar)
     (powermenu)
     ))
 
@@ -217,7 +216,7 @@
            :space-evenly "false"
            :orientation "h"
         ;:halign "center"
-        (button :onclick "pamixer -t"
+        (button 
               (label :text ""
                      :class "bluetooth-icon"))
 
@@ -239,13 +238,13 @@
   (eventbox :onhover "eww update powermenu_toggle=true"
             :onhoverlost "eww update powermenu_toggle=false"
           
-      (box :class "volume"
+      (box
            :spacing 3
            :space-evenly "false"
            :orientation "h"
         ;:halign "center"
-        (button :onclick "pamixer -t"
-              (label :text ""
+        (button
+              (label :text ""
                      :class "powermenu-icon"))
 
         (revealer :duration "550ms"
@@ -253,15 +252,15 @@
                   :transition "slideleft"
                   :onleftclick "pamixer -t"
                   
-  (box :orientation "h" :space-evenly true :class "appbar" :spacing "10" :halign "center" :valign "center" :class "box"
+  (box :orientation "h" :space-evenly true :spacing "0" :halign "center" :valign "center" :class "box" :width 20
   (label :text "SEE YOU SPACE COWBOY..." :class "space-cowboy")
     (button :onclick "spotify&" 
-      (label :text "shutdown"
+      (label :text ""
       :class "shutdown"
              ))
-    (button :onclick "firefox&" (label :text "reboot" :class "firefox"))
-    (button :onclick "code&" (label :text "log off" :class "log off"))
-    (button :onclick "systemsettings5&" (label :text "sleep" :class "thunar"))))
+    (button :onclick "firefox&" (label :text "" :class "firefox"))
+    (button :onclick "code&" (label :text "" :class "log off"))
+    (button :onclick "systemsettings5&" (label :text "" :class "thunar"))))
 )))
 
 ;;;; AppBar widget
