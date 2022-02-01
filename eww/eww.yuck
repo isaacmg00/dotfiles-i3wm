@@ -203,8 +203,6 @@
             :class "volume-bar"
             :onchange "pamixer --set-volume {}"
             :onrightclick "pamixer -t"
-            ;:valign "center"
-            ;:halign "center"
             :tooltip "${volume}")))))
 
 (defwidget volume2 []
@@ -274,11 +272,7 @@
 (defwidget light []
   (eventbox :onhover "eww update light_toggle=true"
             :onhoverlost "eww update light_toggle=false"
-            :onscroll "brightnessctl set 1%- {down}"
-            :onscroll "brightnessctl set +1% {up}"
             :tooltip "test"
-
-
 
         (box :class "light"
              :spacing 0
@@ -291,16 +285,13 @@
                 :reveal "${light_toggle}"
                 :tooltip "test"
 
-      (button
-        :tooltip "test"
-
-      :onscroll "brightnessctl set 5%- {up}" 
-        (label  :text "${light}%"
-                :class "network-ssid"
-                :onclick "brightnessctl set 5%-"
-                :tooltip "test"
-
-                                ))))))
+      (scale 
+      :value "${light}"
+      :min 2
+      :draw-value: "true"
+      :orientation "h"
+      :max 255
+      :onchange "brightnessctl set {}")))))
 
 
 (defwidget network []
@@ -444,7 +435,7 @@
   "pamixer --get-volume")
 
 (defpoll light :interval "500ms"
-  "echo $(brightnessctl -m -d amdgpu_bl1 | awk -F, '{print substr($4, 0, length($4)-1)}')")
+  "brightnessctl g")
 
 (defpoll battery :interval "5s"
   "$HOME/.config/eww/scripts/battery.sh")
