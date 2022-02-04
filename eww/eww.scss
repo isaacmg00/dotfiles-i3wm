@@ -6,7 +6,7 @@
 	font-size: 16px;
 	//font-family: Overpass;
   font-weight: 500;
-  color:  #ffffff;
+  color:  #D6BEB1;
 }
 
 
@@ -61,6 +61,11 @@ scale trough highlight {
   border-radius: 2px;
 }
 
+.graph{
+  all: unset;
+	background: rgba(56,53,51,0.0);
+  border-radius: 2px;
+}
 .mpd {
  /* background: $highlight;
   color: #242118;*/
