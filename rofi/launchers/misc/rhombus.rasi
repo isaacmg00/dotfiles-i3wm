@@ -2,30 +2,30 @@ configuration {
 	font:							"Noto Sans Bold 10";
     show-icons:                     true;
 	icon-theme: 					"Tela circle";
-    display-drun: 					"";
+    display-drun: 					"::";
 }
 * 
 {
-    background-color:        #EDEFF1;
-    border-color:            #EDEFF1;
-    text-color:              #496794;
+    background-color:        #0C0B09;
+    border-color:            #ffffff;
+    text-color:              #0C0B09;
     font:                    "SFNS Display 16";
     show-icons: 		false;   
 	icon-theme:	 	"Inverse";	
 }
 
-@import "~/.cache/wal/colors-rofi-light.rasi"
+@import "~/.config/rofi/launchers/misc/colors-rofi-light.rasi"
 
 
 window 
 {
 	location:	             northwest;
-	x-offset:                20px;
-    y-offset:                80px;
+	x-offset:                46px;
+    y-offset:                47px;
 	height:		             620px;
-	width:		             530px;
+	width:		             500px;
 	orientation:             horizontal;
-    padding:                 10px;
+    padding:                 3px;
 }
 
 inputbar 
@@ -36,17 +36,18 @@ inputbar
 
 prompt
 {
-    padding:                  8px 16px 16px 16px ;
-    border:                   0 1px 0 0;
-    text-color:               #6F92B1;
-    font:                     "FantasqueSansMono Nerd Font 20";
+    padding:                  8px 0px 16px 16px ;
+    border:                   5px 1px 0 0;
+    text-color:               #979AA8;
+    font:                     "SFNS Display 26";
 }
 
 entry
 {
+    border:                   7px -10px 0 0;
     padding:                  16px;
-    text-color:               #8e6f98;
-    font:                    "FantasqueSansMono Nerd Font 16";
+    text-color:               #979AA8;
+    font:                    "SFNS Display 16";
 
 }
 
@@ -65,7 +66,7 @@ element
 
 element selected
 {
-    text-color:               #EDEFF1;
+    text-color:               #D6BEB1;
     background-color:         #d7b38b;
 }
 
