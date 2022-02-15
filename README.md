@@ -1,5 +1,7 @@
 (Note: WIP and modified often, so keep in mind these dots are messy)
 
+<img src="screenshot.png">
+
 ### :computer: System Information:
 
 These are some of the applications that I use in my current setup. 
