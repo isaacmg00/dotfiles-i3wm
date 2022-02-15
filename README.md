@@ -1,4 +1,4 @@
-(Note: WIP, so keep in mind these dots are messy)
+(Note: WIP and modified often, so keep in mind these dots are messy)
 
 ### :computer: System Information:
 
