@@ -1,6 +1,9 @@
 (Note: WIP and modified often, so keep in mind these dots are messy)
+### Screenshots:
 
 <img src="screenshot.png">
+<img src="screenshot2.png">
+
 
 ### :computer: System Information:
 
