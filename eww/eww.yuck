@@ -22,21 +22,21 @@
     (right-side)))
 
 (defwidget mem []
-  (eventbox :onhover "eww update mem_toggle=true"
+  (eventbox :onhover "eww update mem_toggle=false"
             :onhoverlost "eww update mem_toggle=false"
       (box :class "volume"
            :spacing 3
            :space-evenly "false"
         ;:halign "center"
         (button :onclick "pamixer -t"
-              (label :text "mem"
+              (label :text "RAM ${ram}%"
                      :class "network-ssid"
                      ))
 
         (revealer :duration "250ms"
                   :reveal "${mem_toggle}"
                   :transition "slideleft"
-                  :onleftclick "pamixer -t"
+
     (metric 
     :label ""
 
@@ -47,23 +47,23 @@
             :onchange "")))))
 
 (defwidget cpu []
-  (eventbox :onhover "eww update cpu_toggle=true"
+  (eventbox :onhover "eww update cpu_toggle=false"
             :onhoverlost "eww update cpu_toggle=false"
       (box :class "volume"
            :spacing 3
            :space-evenly "false"
         ;:halign "center"
         (button :onclick "pamixer -t"
-              (label :text "cpu"
+              (label :text "CPU   ${cpu}%"
                      :class "network-ssid"
                      ))
 
         (revealer :duration "250ms"
                   :reveal "${cpu_toggle}"
                   :transition "slideleft"
-                  :onleftclick "pamixer -t"
-    (metric :label ""
-    
+
+    (metric 
+      :label "${cpu}%"
     :class "network-ssid"
             :value {EWW_CPU.avg}
             :onchange "")))))
@@ -72,17 +72,21 @@
       (box 
            :orientation "h"
            :space-evenly true
+           :label "${cpu}%"
         ;:halign "center"   
                   (graph :class "graph"
                   :height 20
-                  :width 50
-                  :value "${cpu}"
-                  :max 40
-                  :min 0
-                  :dynamic false
-                  :thickness 2
-                  :line-style "miter"
-                  :time-range "10s")))
+                  ;:width 50
+                  ;:value "${cpu}"
+                  ;:max 40
+                  ;:min 0
+                  ;:dynamic false
+                  ;:thickness 2
+                 ; :line-style "miter"
+                ;  :time-range "10s"
+               ;   :label "hello"
+              ;  )
+              )))
 
 
 (defwidget ram2 []
@@ -100,6 +104,39 @@
                                 :thickness 2
                                 :line-style "miter"
                                 :time-range "10s")))
+
+(defwidget power []
+                                  (eventbox	:onhover "eww update power=true"	
+                                        :onhoverlost "eww update power=false" 
+                                  (box		:orientation "h"					
+                                        :space-evenly "false" 	 
+                                        :vexpand "false" 	
+                                        :class "power"
+                                  (revealer	:transition "slideright"				
+                                        :reveal power			 
+                                        :duration "550ms"
+                                  (box		:orientation "h"					
+                                        :space-evenly "false"
+                                
+                                  (button   	:class "button-bspres"  			
+                                        :tooltip "BSPWM Restart" 
+                                        :onclick "bspc wm -r" "" )
+                                
+                                    (button		:class "button-reb"					
+                                          :tooltip "Reboot"		 
+                                        :onclick "reboot"	"")
+                                
+                                  (button		:class "button-quit" 				
+                                        :tooltip "Logout" 		 
+                                        :onclick "killall bspwm" "")
+                                
+                                  (button		:class "button-lock" 				
+                                        :tooltip "Lock Screen"	 
+                                        :onclick "betterlockscreen -l"	"")))
+                                
+                                  (button		:class "button-off"					
+                                        :tooltip "Shutdown"		 
+                                        :onclick "shutdown now"	""))))
 ;; Widgets
 (defwidget mpd []
 
@@ -159,6 +196,7 @@
     (bluetooth)
     (battery)
     (powermenu)
+    ;(power)
     ))
 
 (defwidget left-side []
@@ -169,7 +207,7 @@
       :space-evenly "false"
     (volume2)
     (mem)
-    (ram2)
+    ;(ram2)
     (cpu)
     (cpu2)
     ))
@@ -410,6 +448,8 @@
 (defvar cpu_toggle false)
 
 (defvar powermenu_toggle false)
+
+(defvar power false)
 
 
 (defvar gamma-toggle
