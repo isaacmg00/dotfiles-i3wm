@@ -1,0 +1,326 @@
+@use 'colors';
+
+
+* {	
+	all: unset;
+	font-size: 16px;
+	//font-family: Overpass;
+  font-weight: 500;
+  color:  #e3c9a8;
+}
+
+
+/* Variables */
+$highlight: #bcbcbc;
+$highlight-ws: #fcdddd;
+$highlight-sidebar: #bcbcbc;
+
+
+.main-bar {
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-right: 8px;
+}
+
+.main-bar {
+	background: rgba(56,53,51,0.0);
+}
+
+.volume{
+  padding-left: 0px;
+}
+
+.volume-bar{
+  padding-right: 0px;
+}
+
+.playerctl-icon {
+  padding-right: 6px;
+}
+.vol-icon{
+  padding-right: 0px;
+}
+
+.right-side {
+	margin-left: 8px;
+}
+
+
+scale trough {
+  all: unset;
+  background-color: #4b565c;
+  border-radius: 2px;
+  min-height: 7px;
+  min-width: 70px;
+  margin: 0 5px 0 8px;
+}
+
+scale trough highlight {
+  all: unset;
+  background-color: #ccdbdb;
+  border-radius: 2px;
+}
+
+.graph{
+  all: unset;
+	background: rgba(197, 106, 45, 0.5);
+  border-radius: 2px;
+}
+.mpd {
+ /* background: $highlight;
+  color: #242118;*/
+ 	margin-left: 0px;
+  padding: 0px 1px 0px 12px;
+  border-radius: 3;
+}
+
+.workspaces {
+/*  background: $highlight;
+  color: #242118;*/
+  padding: 0px 0px;
+  border-radius: 3;
+}
+
+.bluetooth-icon{
+  font-size: 17px;
+  padding: 4px 0px 2px 0px;
+
+}
+
+
+.bluetooth-icon:hover{
+  background: colors.$color3;
+  font-size: 17px;
+  padding: 4px 0px 2px 0px;
+}
+
+
+.battery-icon{
+  font-size: 18px;
+  padding: 4.8px 0px 1px 0px;
+
+}
+.volume {
+  padding: 2px 0px 2px 2px;
+  border-radius: 3;
+}
+
+.battery {
+  padding: 2px 0px 2px 0px;
+  border-radius: 3;
+}
+
+.battery-icon {
+  padding-left: 5px;
+
+}
+
+
+.powermenu-icon{
+  padding: 2px 0px 0px 2px;
+}
+
+.space-cowboy{
+  font: 15px Cheltenham Condensed;
+  //font-weight: bold;
+  font-style: italic;
+  padding-top: 5px;
+  }
+
+.network {
+/*  background: $highlight;
+  color: #242118;*/
+  padding: 2px 5px 2px 5px;
+  border-radius: 3;
+}
+
+.network-icon {
+  padding-right: 1px;
+
+}
+.network-ssid {
+  padding-top: 5px;
+  padding-right: 1px;
+  font-size: 14px;
+  font-size: 16px;
+	font-family: Overpass;
+  font-weight: 500;
+}
+
+.network-ssid:hover {
+  padding-top: 5px;
+  padding-right: 1px;
+  font-size: 4px;
+  background: colors.$color3;
+
+}
+
+.cpu {
+  padding-top: 50px;
+  padding-right: 1px;
+  font-size: 20px;
+  font-family: Mono;
+
+}
+
+.hover:hover{
+  border-radius: 5px;
+  color: white;
+}
+
+.light {
+  padding-top: 10px;
+  padding: 2px 5px 2px 5px;
+  border-radius: 3;
+  font-family: Material\-Design\-Iconic\-Font;
+  font-size: 14px;
+}
+
+.light-text{
+  padding-top: 10px;
+  padding: 2px 5px 2px 5px;
+  border-radius: 3;
+  font-family: Material\-Design\-Iconic\-Font;
+  font-size: 14px;
+}
+
+.date {
+ /* background: $highlight;
+  color: #242118;*/
+  padding: 2px 10px;
+  padding-right: 0px;
+  border-radius: 3;
+}
+.date_alt {
+  padding-right: 6px;
+}
+// Active Workspace highlight
+/*
+.1
+.2
+.3
+.4
+.5
+.6 {
+  color: $highlight-ws;
+}
+*/
+
+// Sidebar widget 
+
+.sidebar-icon {
+  padding-top: 3px;
+
+  padding-right: 0px;
+  padding-left: 4px;
+  
+
+}
+
+
+.spotify{
+  font-size: 20px;
+  color: #1DB954;
+
+}
+.spotify:hover{
+background-color: white;
+}
+
+.firefox{
+  font-size: 16px;
+  color: #E55B0A;
+}
+
+.code{
+  font-size: 20px;
+  color: #0078d7;
+}
+
+.thunar{
+  font-size: 20px;
+  color: #C0C0C0;
+}
+
+.shutdown{
+}
+
+
+.left{
+  font-size: 4px;
+
+}
+.right{
+  padding-right: 10px;
+}
+
+.box{
+  background: rgba(56,53,51,0.0);
+  border-radius: 6px;
+  padding-right: 10px;
+  padding-left: 10px;
+
+}
+.app-icon{
+  font-size: 12px;
+
+}
+.sidebar-icon:hover {
+  padding-top: 5px;
+  padding-right: 1px;
+  font-size: 4px;
+  background: colors.$color3;
+  
+
+}
+
+.media {
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 10px;
+  padding-bottom: 12px;
+}
+
+.image {
+  border: 2px $highlight solid;
+}
+
+.metadata {
+  font-weight: 600;
+}
+
+.power-menu {
+  margin-top: 00px;
+  padding-top: 4px;
+  padding-bottom: 0px;
+}
+
+.power-icon {
+  font-size: 25px;
+  padding: 19px 13px 19px 13px;
+  background: rgba(40,40,40,0.80); 
+  border-radius: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+
+}
+
+.power-poweroff {
+  font-size: 23px;
+  margin-top: 2px;
+  margin-left: 10px;
+  padding: 2px 6px 3px 6px;
+  margin-bottom: 10px;
+  background: rgba(40,40,40,0.80); 
+  border-radius: 9px;
+}
+
+.power-hibernation {
+  margin-right: 10px;
+}
+
+.sidebar  {
+  color: $highlight-sidebar;
+  background:  rgba(56,53,56,0.54);
+  border: 2px $highlight-sidebar solid;
+}
