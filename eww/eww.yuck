@@ -1,13 +1,13 @@
 (defwindow bar
     :monitor 0
-    :wm-ignore true
+    :wm-ignore false
     :stacking "bg"
     :windowtype "dock"
     :focusable false
         
     :geometry (geometry :x "0%"
-                        :y "0px"
-                        :width "100%"
+                        :y "6px"
+                        :width "95%"
                         :height "30px"
                         :anchor "top center")
   (main-bar))
@@ -54,7 +54,7 @@
            :space-evenly "false"
         ;:halign "center"
         (button :onclick "pamixer -t"
-              (label :text "CPU   ${cpu}%"
+              (label :text "CPU ${cpu}%"
                      :class "network-ssid"
                      ))
 
@@ -205,7 +205,7 @@
       :valign "center"
       :spacing 0
       :space-evenly "false"
-    (volume2)
+   
     (mem)
     ;(ram2)
     (cpu)
