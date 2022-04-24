@@ -24,7 +24,7 @@ echo "
 [general]
 framerate = 60
 mode = normal
-bars = 7
+bars = 14
 bar_spacing = 0
 
 [output]
@@ -36,7 +36,7 @@ mono_option = average
 data_format = ascii
 ascii_max_range = 7
 bar_delimiter = 5
-; frame_delimiter = 10
+frame_delimiter = 10
 
 [color]
 
@@ -64,7 +64,7 @@ gradient_color_8 = '#cc3333'
 
 # Percentage value for integral smoothing. Takes values from 0 - 100.
 # Higher values means smoother, but less precise. 0 to disable.
-;integral = 0
+integral = 70
 
 # Disables or enables the so-called "Monstercat smoothing" with or without "waves". Set to 0 to disable.
 ;monstercat = 0
@@ -72,7 +72,7 @@ gradient_color_8 = '#cc3333'
 
 # Set gravity percentage for "drop off". Higher values means bars will drop faster.
 # Accepts only non-negative values. 50 means half gravity, 200 means double. Set to 0 to disable "drop off".
-gravity = 200
+gravity = 50
 
 
 # In bar height, bars that would have been lower that this will not be drawn.
@@ -83,11 +83,21 @@ gravity = 200
 # This one is tricky. You can have as much keys as you want.
 # Remember to uncomment more then one key! More keys = more precision.
 # Look at readme.md on github for further explanations and examples.
-#1 = 5 # bass
-#2 = 10
-#3 = 10 # midtone
-#4 = 10
-#5 = 5# treble
+0 = 3
+1 = 5 # bass
+2 = 10
+3 = 10 # midtone
+4 = 10
+5 = 10
+6 = 10
+7 = 10
+8 = 10
+9 = 10
+10 = 5# treble
+11 = 5# treble
+12 = 5# treble
+13 = 5# treble
+14 = 5# treble
 
 
 " > $config_file
