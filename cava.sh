@@ -24,8 +24,10 @@ echo "
 [general]
 framerate = 60
 mode = normal
-bars = 14
+bars = 10
 bar_spacing = 0
+sensitivity = 200
+lower_cutoff_freq = 50
 
 [output]
 method = raw
@@ -34,7 +36,7 @@ raw_target = $pipe
 
 mono_option = average
 data_format = ascii
-ascii_max_range = 7
+ascii_max_range = 5
 bar_delimiter = 5
 frame_delimiter = 10
 
@@ -45,34 +47,18 @@ frame_delimiter = 10
 # ncurses output method and a terminal that can change color definitions such as Gnome-terminal or rxvt.
 # if supported, ncurses mode will be forced on if user defined colors are used.
 # default is to keep current terminal color
-;background = default
-;foreground = default
-
-gradient = 0
-gradient_count = 8
-gradient_color_1 = '#59cc33'
-gradient_color_2 = '#80cc33'
-gradient_color_3 = '#a6cc33'
-gradient_color_4 = '#cccc33'
-gradient_color_5 = '#cca633'
-gradient_color_6 = '#cc8033'
-gradient_color_7 = '#cc5933'
-gradient_color_8 = '#cc3333'
 
 
 [smoothing]
 
 # Percentage value for integral smoothing. Takes values from 0 - 100.
 # Higher values means smoother, but less precise. 0 to disable.
-integral = 70
+noise_reduction = 0.99
 
 # Disables or enables the so-called "Monstercat smoothing" with or without "waves". Set to 0 to disable.
-;monstercat = 0
-;waves = 20
 
 # Set gravity percentage for "drop off". Higher values means bars will drop faster.
 # Accepts only non-negative values. 50 means half gravity, 200 means double. Set to 0 to disable "drop off".
-gravity = 50
 
 
 # In bar height, bars that would have been lower that this will not be drawn.
@@ -83,22 +69,6 @@ gravity = 50
 # This one is tricky. You can have as much keys as you want.
 # Remember to uncomment more then one key! More keys = more precision.
 # Look at readme.md on github for further explanations and examples.
-0 = 3
-1 = 5 # bass
-2 = 10
-3 = 10 # midtone
-4 = 10
-5 = 10
-6 = 10
-7 = 10
-8 = 10
-9 = 10
-10 = 5# treble
-11 = 5# treble
-12 = 5# treble
-13 = 5# treble
-14 = 5# treble
-
 
 " > $config_file
 
