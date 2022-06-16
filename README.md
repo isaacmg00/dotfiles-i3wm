@@ -1,4 +1,3 @@
-(Note: WIP and modified often, so keep in mind these dots are messy)
 TODO: commit graphs for ram and cpu to eww config
 ### Screenshots:
 
