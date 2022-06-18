@@ -1,4 +1,4 @@
-TODO: commit graphs for ram and cpu to eww config
+
 ### Screenshots:
 
 <img src="screenshot.png">
