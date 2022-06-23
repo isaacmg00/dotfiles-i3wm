@@ -1,4 +1,4 @@
-
+Note: Currently trying bspwm!
 ### Screenshots:
 
 <img src="screenshot.png">
