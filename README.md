@@ -1,4 +1,4 @@
-NOTE: This repository is out of date and configurations may contain deprecated code, so feel free to copy at your
+NOTE: This repository is out of date and configurations may contain deprecated code, so feel free to copy at your own risk.
 ### Screenshots:
 
 <img src="screenshot.png">
