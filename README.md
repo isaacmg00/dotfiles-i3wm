@@ -1,4 +1,4 @@
-NOTE: This repository is out of date and configurations may contain deprecated code, so feel free to copy at your own risk.
+NOTE: This repository is out of date and configurations may contain deprecated code & projects, so feel free to copy at your own risk.
 
 As of July 2022, I migrated over to a bspwm rice.
 ### Screenshots:
